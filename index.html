@@ -11,7 +11,7 @@
 
     <div style="position: relative;">
 
-      <b-button block  data-step="3" data-intro="Click here to show a 3D view of your current design." id="visualize-button" :variant="visualizeOverlay ? 'secondary' : 'outline-secondary'" :class="{'white-btn': !visualizeOverlay}" v-on:click="toggleVisualizeOverlay({moveUp:true})"><i class="fas fa-2x fa-eye-slash" v-if="!visualizeOverlay"></i><i class="fas fa-2x fa-eye" v-else></i></b-button>
+      <b-button block  data-step="3" style="width: 100%; background: mediumpurple;" data-intro="Click here to show a 3D view of your current design." id="visualize-button" :variant="visualizeOverlay ? 'secondary' : 'outline-secondary'" :class="{'white-btn': !visualizeOverlay}" v-on:click="toggleVisualizeOverlay({moveUp:true})"><i class="fas fa-2x fa-eye-slash" v-if="!visualizeOverlay"></i><i class="fas fa-2x fa-eye" v-else></i></b-button>
 
       <div id="design-canvas" style="position: absolute; top: -100px; left: 0"></div>
 
